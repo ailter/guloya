@@ -7,15 +7,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
         body {
-            font: 400 15px Lato, sans-serif;
+            /*font: 400 15px Lato, sans-serif;*/
             line-height: 1.8;
             color: #818181;
+            font-family: "Segoe UI", sans-serif !important;
         }
 
         h2 {
@@ -35,10 +35,9 @@
         }
 
         .jumbotron {
-            background-color: #f4511e;
+            background-color: #68BE6E;
             color: #fff;
             padding: 100px 25px;
-            font-family: Montserrat, sans-serif;
         }
 
         .container-fluid {
@@ -50,12 +49,12 @@
         }
 
         .logo-small {
-            color: #f4511e;
+            color: #68BE6E;
             font-size: 50px;
         }
 
         .logo {
-            color: #f4511e;
+            color: #68BE6E;
             font-size: 200px;
         }
 
@@ -144,34 +143,36 @@
 
         .navbar {
             margin-bottom: 0;
-            background-color: #f4511e;
+            background-color: #ffffff;
+            color: #68BE6E;
             z-index: 9999;
             border: 0;
-            font-size: 12px !important;
+            font-size: 13px !important;
             line-height: 1.42857143 !important;
             letter-spacing: 4px;
             border-radius: 0;
-            font-family: Montserrat, sans-serif;
+            font-family: "Segoe UI", sans-serif;
         }
 
-            .navbar li a, .navbar .navbar-brand {
-                color: #fff !important;
-            }
+        /*.navbar li a, .navbar .navbar-brand {
+                color: #fff;
+            }*/
 
         .navbar-nav li a:hover, .navbar-nav li.active a {
-            color: #f4511e !important;
+            color: #68BE6E !important;
             background-color: #fff !important;
         }
 
         .navbar-default .navbar-toggle {
             border-color: transparent;
             color: #fff !important;
+            font-family: "Segoe UI";
         }
 
         footer .glyphicon {
             font-size: 20px;
             margin-bottom: 20px;
-            color: #f4511e;
+            color: #68BE6E;
         }
 
         .slideanim {
@@ -269,7 +270,7 @@
                 <p>20 yıl böyle geçti...</p>
                 <p>
                     Bundan kısa zaman önce bir yaz zamanında tüm uğraşların yanında, doğanın kucağının çağırdığını hissetti ruhumuz. Aslında hep vardı ama hobi <uğraşıydı zeytin bahçelerimiz.
-                                                                                                                                                                          Artık başka bir sevdaydı zeytin ağaçlarına bakışımız...
+                                                                                                                                                                           Artık başka bir sevdaydı zeytin ağaçlarına bakışımız...
                 </p>
 
                 <p>
@@ -350,7 +351,6 @@
             </div>
         </div>
     </div>-->
-
     <!-- Container (Portfolio Section) -->
     <div id="portfolio" class="container-fluid text-center bg-grey">
         <h2>Ürünlerimiz</h2><br>
@@ -358,66 +358,36 @@
         <div class="row text-center slideanim">
             <div class="col-sm-4">
                 <div class="thumbnail">
-                    <img src="http://via.placeholder.com/397x297" alt="Paris" width="400" height="300">
-                    <p><strong>Zeytin</strong></p>
-                    <p>Açıklama</p>
+                    <img src="1.jpg" alt="1" width="400" height="300">
+                    <p><!--<strong>Zeytin</strong>--></p>
+                    <p></p>
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="thumbnail">
-                    <img src="http://via.placeholder.com/397x297" alt="New York" width="400" height="300">
-                    <p><strong>Zeytinyağı</strong></p>
-                    <p>Açıklama</p>
+                    <img src="2.jpg" alt="2" width="400" height="300">
+                    <p><!--<strong>Zeytinyağı</strong>--></p>
+                    <p></p>
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="thumbnail">
-                    <img src="http://via.placeholder.com/397x297" alt="San Francisco" width="400" height="300">
-                    <p><strong>Test Ürün</strong></p>
-                    <p>Açıklama</p>
+                    <img src="3.jpg" alt="3" width="400" height="300">
+                    <p><!--<strong>Test Ürün</strong>--></p>
+                    <p></p>
                 </div>
             </div>
         </div><br>
 
-        <h2>M��terimizin Sesi</h2>
-        <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
+        <!--<h2>Müşterimizin Sesi</h2>-->
 
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <h4>"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President, Comment Box</span></h4>
-                </div>
-                <div class="item">
-                    <h4>"One word... WOW!!"<br><span>John Doe, Salesman, Rep Inc</span></h4>
-                </div>
-                <div class="item">
-                    <h4>"Could I... BE any more happy with this company?"<br><span>Chandler Bing, Actor, FriendsAlot</span></h4>
-                </div>
-            </div>
-
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
     </div>
     <!-- Container (Contact Section) -->
     <div id="contact" class="container-fluid bg-grey">
-        <h2 class="text-center">�leti�im</h2>
+        <h2 class="text-center">İletişim</h2>
         <div class="row">
             <div class="col-sm-5">
-                <p>Bize yaz�n</p>
+                <p>Bize yazın</p>
                 <p><span class="glyphicon glyphicon-map-marker"></span>&nbsp; Hocaalizade Mh. 7. Hamam Sk. No: 1/401 Osmangazi/Bursa</p>
                 <p><span class="glyphicon glyphicon-envelope"></span>&nbsp; gguldale@gmail.com</p>
             </div>

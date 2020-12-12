@@ -1,0 +1,322 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <title>Güloya</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="keywords" content="zeytin, zeytinyağı, güloya, bursa, güloya tarım" />
+    <meta name="description" content="Güloya Tarım Gıda Sanayi ve Ticaret A.Ş." />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script type="text/javascript" src="scripts/script.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js"></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyB6hxZkDXAJAMy4XluxkWJgq8V7end5icA",
+            authDomain: "guloyatarim.firebaseapp.com",
+            databaseURL: "https://guloyatarim.firebaseio.com",
+            projectId: "guloyatarim",
+            storageBucket: "guloyatarim.appspot.com",
+            messagingSenderId: "821262893860",
+            appId: "1:821262893860:web:a6a2590ccb91936f9de9b1",
+            measurementId: "G-QXD9WN9QG3"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+    <!-- <script data-ad-client="ca-pub-6304081098805692" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-6304081098805692"
+         data-ad-slot="3747434821"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script> -->
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button"
+                class="navbar-toggle"
+                data-toggle="collapse"
+                data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <img src="images/logotr.png" style="width: 7em;"/>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#news">Haberler</a></li>
+                    <li><a href="#about">Hakkımızda</a></li>
+                    <li><a href="#portfolio">Ürünlerimiz</a></li>
+                    <li><a href="#contact">İletişim</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div id="news" class="container-fluid">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                </ol>
+                
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div style="text-align: center">
+                            <img src="images/alabanda.jpg" style="width: 60%;" alt="Alabanda">
+                            <div class="carousel-caption">
+                                <p>
+                                    <a href="images/guloya-analiz-degerlendirme.pdf">Alabanda Analiz Değerlendirme</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div style="text-align: center">
+                            <img src="images/zeytin-dostu-1.jpg" style="width: 100%;" alt="Zeytin Dostu">
+                            <div class="carousel-caption">
+                                <p>
+                                    <a href="images/kimyasal-analiz-sonucu.pdf">Kimyasal Analiz Sonucu</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+        <div id="about" class="container-fluid">
+            <div class="row">
+                <h2>Hakkımızda</h2>
+                <br />
+                <h4>
+                    Sanayii çarklarının arasında ve paranın kendine has dünyasında
+                    çalışan iki kadının işbirliği...
+                </h4>
+
+                <p>
+                    Öyle bir dünyaydı ki geldiğimiz yer; yurt içi, yurt dışı büyük
+                    projelere hayat vererek büyürken de, yeni ve farklı bakışlar
+                    yaratırken de, ekonominin krizler dahil gel-gitlerinde, zorun
+                    kucağında, çıkmaz sokak aralarında da, ya da önümüzde açılan uzun
+                    davetkar yollarda koşarken de hep birlikte ve hep eleleydik.
+                </p>
+                <p>20 yıl böyle geçti...</p>
+                <p>
+                    Bundan kısa zaman önce bir yaz zamanında tüm uğraşların yanında,
+                    doğanın kucağının çağırdığını hissetti ruhumuz. Aslında hep vardı
+                    ama hobi uğraşıydı zeytin bahçelerimiz. Artık başka bir sevdaydı
+                    zeytin ağaçlarına bakışımız...
+                </p>
+
+                <p>
+                    10 ağustos 2017 tarihinde kurduk şirketimizi;<br />
+                    GÜLOYA Tarım Gıda Sanayi ve Ticaret A.Ş
+                </p>
+                <p>
+                    Güney Marmara Bölgesinin en göz alıcı zeytinliklerinin yer aldığı
+                    Hasköy, Dedeköy'de 70 dönümlük arazilerimiz üzerinde, olgunundan
+                    gencine yüzlerce ağacımıza sarıldık sanki...
+                </p>
+
+                <p>
+                    Onlarca kitap okuyor, seminerlere iştirak ediyor, üniversite öğretim
+                    görevlileri, danışmanlar, köylü, işçi, alıcı, satıcı bu işle kim
+                    uğraşıyorsa dinliyorduk. Sektörün makina üreticileri, sektör
+                    bankaları, yağ - zeytin üreticileri peşinde onların bilgi ve
+                    tecrübelerini adeta yutuyorduk. Farklı zeytin bölgeleri, Kuzey Ege,
+                    Güney Ege keşiflerimiz, yurt içi ve yurt dışı fuarlar ile beslendik,
+                    beslendik, beslendik...
+                </p>
+
+                <p>
+                    Bu koşuşturmalar sırasında kurumsallaşma çalışmalarımız da hızla
+                    devam ediyordu. Marka oluşumu(Güloya), tescilleme, grafik
+                    tasarımlar, kamu kurum ve ilişkileri, ürün ve toprak tetkikleri,
+                    laboratuvar çalışmaları, arazi yeraltı-üstü su yolu tespitleri,
+                    kayıtlı üretim aşamalarının tamamlanması, takip ve izleme...
+                </p>
+
+                <p>
+                    2018 yılı son çeyrek itibariyle butik yağ makinamızı ve tesisimizi
+                    de devreye aldıktan sonra ürünü almaya hazırdık biz.
+                </p>
+
+                <p>Ekim 2018!</p>
+                <p>
+                    Erken hasat ilk ürünleri almaya başladığımızda da yüzümüz gülüyordu
+                    artık. Her sabah 07.00'da başlayıp gün boyunca ağaçlarımızı üzmeyen
+                    toplama yöntemleri ile topladığımız ürünlerimiz, hiç bekletilmeden
+                    boy ayırmaya ve oradan da yine arazimiz içerisinde bulunan ve sadece
+                    kendi ürünlerimiz için kullandığımız yağ tesisimize girmiş ve
+                    bekletmeden yağ sıkma sürecimiz de başlamıştı. Ortalama 3,5 saatte
+                    soğuk sıkım elde ettiğimiz zeytinyağı ürünümüzün asit ölçümleri 0,2
+                    dizem(asitlik değer) sonucunu verdi. Dizem ne kadar az ise
+                    zeytinyağı o kadar değerlidir. Bu sonuç ise "1.Sınıf Extra Virgin
+                    Sızma Zeytinyağı" demekti. Danışman ve tadımcılarımızın ifadesi ile
+                    sofralık zeytinleri ile ünlü bölgemiz güney Marmara'nın en
+                    nefasetli, asit değeri ise en düşük zeytinyağını elde ettik.
+                </p>
+
+                <p>
+                    Tüm bu çalışmalarımızda hep global düşündük, yerelde uyguladık.
+                    Şimdi ise Anadolunun güneşli topraklarına doğru sürprizli yeni
+                    lezzet yolculuklarımız var. Şayet yönü belirleyecek haritanız yoksa
+                    yeni hedefe ulaşmak mümkün değildir. Bizde süreklilik, farklılık ve
+                    hedeflerimize ulaşmak için, anavatanı Anadolu olan bu kutsal ağacın
+                    meyvası zeytini, yağını ve tüm çıktılarını istiyoruz ki; bir kez de
+                    bizim elimizden diğer dünya coğrafyaları tanısın...
+                </p>
+
+                <p>
+                    Yani; Çalışıyoruz <br />
+                    Çalışmalıyız<br />
+                    Çalışacağız <br />
+                </p>
+                <p>
+                    Saygılarımızla, Sevgilerimizle <br />
+                    Güloya A.Ş
+                </p>
+                
+            </div>
+        </div>
+        <!-- Container (Portfolio Section) -->
+        <div id="portfolio" class="container-fluid text-center bg-grey">
+            <h2>Ürünlerimiz</h2>
+            <br />
+
+            <div class="row text-center slideanim">
+                <div class="col-xl-4 col-md-4 col-sm-12">
+                    <div class="thumbnail">
+                        <img src="images/1.jpg" alt="1" width="400" height="300" />
+                        <p><strong>Erken hasat sızma zeytinyağımız 1 litre şişe ve 3 litre teneke ambalajlarıyla mevcuttur.</strong></p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 col-sm-12">
+                    <div class="thumbnail">
+                        <img src="images/2.jpg" alt="2" width="400" height="300" />
+                        <p><strong>Zeytinde tek tip üretimimiz olup imalatımız az tuzlu kuru seledir.</strong></p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 col-sm-12">
+                    <div class="thumbnail">
+                        <img src="images/3.jpg" alt="3" width="400" height="300" />
+                        <p><strong>Altın madalyalı zeytinyağımız erken hasattır.</strong></p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center slideanim">
+                <div class="col-xl-4 col-md-4 col-sm-12">
+                    <div class="thumbnail">
+                        <img src="images/4.jpg" alt="1" width="400" height="300" />
+                        <p><strong>Ege yağ çeşidimiz "Alabanda".</strong></p>
+                        <p><strong>Alabanda, antik çağda Karia Bölgesinin en görkemli kentlerindendir. Karia dilinde "zafer atı" anlamına geldiği belirtilir.</strong></p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 col-sm-12">
+                    <div class="thumbnail">
+                        <img src="images/5.jpg" alt="2" width="400" height="300" />
+                        <p><strong>Alabanda kenti çevresinde rastlanan zeytin ağaçları ve zeytinyağı işlikleri, zeytinyağının Alabanda'nın ihtişamlı dönemlerinde kent ekonomisinin en önemli unsurlarından biri olduğunu kanıtlamaktadır.</strong></p>
+                        <p>
+                            <strong>
+                                Yöremizde Alabanda'nın görkemli zamanlarına tanıklık etmiş en yaşlı zeytin ağaçlarımızın meyvelerini erken hasat ederek sofralarınıza getirdik.
+                            </strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <br />
+        </div>
+        <!-- Container (Contact Section) -->
+        <div id="contact" class="container-fluid bg-grey">
+            <h2 class="text-center">İletişim</h2>
+            <div class="row">
+                <div class="col-sm-12 slideanim">
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <input class="form-control"
+                            id="name"
+                            name="name"
+                            placeholder="Ad Soyad"
+                            type="text"
+                            required />
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <input class="form-control"
+                            id="email"
+                            name="email"
+                            placeholder="E-Mail Adresi"
+                            type="email"
+                            required />
+                        </div>
+                    </div>
+                    <textarea class="form-control"
+                    id="comments"
+                    name="comments"
+                    placeholder="Yorum"
+                    rows="5"></textarea><br />
+                    <div class="row">
+                        <div class="col-sm-12 form-group">
+                            <button id="btnSendMessage" class="btn btn-default pull-right" type="button">
+                                Gönder
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <p>Bize yazın</p>
+                    <p>
+                        <span class="glyphicon glyphicon-map-marker"></span>&nbsp;
+                        Hocaalizade Mh. 7. Hamam Sk. No: 1/401 Osmangazi/Bursa
+                    </p>
+                    <p>
+                        <span class="glyphicon glyphicon-envelope"></span>&nbsp;
+                        mail@guloyatarim.com
+                    </p>
+                    <p>
+                        <span class="glyphicon glyphicon-earphone"></span>&nbsp;
+                        <span style="cursor: pointer;" onClick="window.open('tel:+905302909163');">+90 530 290 9163</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container-fluid text-center">
+        <a href="#myPage" title="Yukarı">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+    </footer>
+</body>
+</html>
